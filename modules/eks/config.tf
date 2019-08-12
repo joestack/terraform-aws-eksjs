@@ -80,6 +80,6 @@ output "kubeconfig" {
   value = "${local.kubeconfig}"
 }
 
-output "kubeconfig_aws" {
+output "kubeconfig-aws" {
   value = "${local.kubeconfig_aws}"
 }
