@@ -5,7 +5,7 @@
 
 module "cluster-sg" {
   source  = "terraform-aws-modules/security-group/aws"
-  version = "3.0.1"
+  version = "3.1.0"
 
   name        = "cluster-sg"
   description = "EKS node security groups"
@@ -37,7 +37,7 @@ module "cluster-sg" {
 
 module "node-sg" {
   source  = "terraform-aws-modules/security-group/aws"
-  version = "3.0.1"
+  version = "3.1.0"
 
   name        = "node-sg"
   description = "EKS node security groups"
@@ -73,7 +73,7 @@ module "node-sg" {
 # BASTION
 module "ssh_sg" {
   source  = "terraform-aws-modules/security-group/aws"
-  version = "3.0.1"
+  version = "3.1.0"
 
   name        = "ssh-sg"
   description = "Security group which is to allow SSH from Bastion"
